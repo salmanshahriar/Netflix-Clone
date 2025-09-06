@@ -137,7 +137,7 @@ export default function VideoPlayerWithSources({
           )}
 
           {/* Error Overlay */}
-          {hasError  && (
+          {/* {hasError  && (
             <div className="absolute inset-0 bg-black/90 flex items-center justify-center z-20">
               <div className="text-center max-w-md px-4">
                 <AlertCircle className="w-16 h-16 text-red-500 mx-auto mb-4" />
@@ -159,7 +159,7 @@ export default function VideoPlayerWithSources({
                 </div>
               </div>
             </div>
-          )}
+          )} */}
 
           {/* Video Iframe */}
           <iframe
@@ -239,7 +239,7 @@ export default function VideoPlayerWithSources({
             )}
 
             {/* French Sources */}
-            {showFrenchSources && frenchSources.length > 0 && (
+            {/* {showFrenchSources && frenchSources.length > 0 && (
               <div>
                 <div className="text-sm text-gray-400 mb-3 font-medium">🇫🇷 French Sources</div>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
@@ -260,10 +260,10 @@ export default function VideoPlayerWithSources({
                   ))}
                 </div>
               </div>
-            )}
+            )} */}
 
             {/* Status and Tips */}
-            <div className="bg-gray-800/50 rounded-lg p-4 border border-gray-700">
+            {/* <div className="bg-gray-800/50 rounded-lg p-4 border border-gray-700">
               <div className="flex items-start gap-3">
                 <div className="flex-shrink-0">
                   {hasError ? (
@@ -286,7 +286,7 @@ export default function VideoPlayerWithSources({
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
