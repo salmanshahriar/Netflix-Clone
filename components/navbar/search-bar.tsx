@@ -128,7 +128,7 @@ export default function SearchBar() {
               isFocused ? "bg-gray-900/80 border-gray-600 ring-2 ring-red-600/20" : ""
             }`}
           />
-          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
+
           {query && (
             <button
               type="button"

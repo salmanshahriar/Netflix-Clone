@@ -42,7 +42,7 @@ export default function NavLinks({ pathname, watchLaterCount, historyCount, isMo
     return (
       <div className="space-y-2">
         <Link href="/watch-later" className={linkClass("/watch-later")} onClick={onItemClick}>
-          <span className="bg-gray-900/60 backdrop-blur-sm border-gray-700/50 hover:bg-gray-800/60 text-white rounded-full px-4 py-2 transition-all duration-200">Watch Later</span>
+          <span className="font-medium">Watch Later</span>
           <CountBadge count={watchLaterCount} />
         </Link>
 
@@ -56,7 +56,7 @@ export default function NavLinks({ pathname, watchLaterCount, historyCount, isMo
   return (
     <>
       <Link href="/watch-later" className={linkClass("/watch-later")}>
-        <span className="bg-gray-900/60 backdrop-blur-sm border-gray-700/50 hover:bg-gray-800/60 text-white rounded-full px-4 py-2 transition-all duration-200">Watch Later</span>
+        <span className="bg-gray-900/9  w-full text-left px-3 py-2 rounded-xl transition-colors text-sm">Watch Later</span>
         {watchLaterCount > 0 && (
           <div className="absolute -top-2 -right-2">
             <CountBadge count={watchLaterCount} />

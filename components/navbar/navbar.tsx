@@ -66,13 +66,17 @@ export default function Navbar() {
           <Link href="/" className="flex items-center group">
             <div className="text-2xl lg:text-3xl font-black">
               <span className="text-red-600 group-hover:text-red-500 transition-colors">NETFLIX</span>
-              {/* <span className="text-white/80 ml-1 text-lg font-normal">CLONE</span> */}
+              <span className="text-white/80 ml-1 text-lg font-normal">CLONE</span>
             </div>
           </Link>
 
+          
+
           {/* Desktop Actions */}
-          <div className="hidden lg:flex items-center space-x-4">
+          <div className="hidden lg:flex items-center space-x-0">
+          {/* <div className="hidden md:flex items-center">
             <NavLinks pathname={pathname} watchLaterCount={watchLaterCount} historyCount={historyCount} />
+          </div> */}
             <FilterDropdowns />
             <SearchBar />
           </div>
