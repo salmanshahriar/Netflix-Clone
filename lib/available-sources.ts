@@ -10,16 +10,6 @@ export interface VideoSource {
 
 export const availableSources: VideoSource[] = [
 
-
-  {
-    id: "2embed",
-    name: "2Embed",
-    isFrench: false,
-    urls: {
-      movie: "https://www.2embed.cc/embed/{id}",
-      tv: "https://www.2embed.cc/embedtv/{id}&s={season}&e={episode}",
-    },
-  },
      {
     id: "autoembed",
     name: "AutoEmbed",
@@ -27,6 +17,15 @@ export const availableSources: VideoSource[] = [
     urls: {
       movie: "https://player.autoembed.cc/embed/movie/{id}",
       tv: "https://player.autoembed.cc/embed/tv/{id}/{season}/{episode}",
+    },
+  },
+    {
+    id: "2embed",
+    name: "2Embed",
+    isFrench: false,
+    urls: {
+      movie: "https://www.2embed.cc/embed/{id}",
+      tv: "https://www.2embed.cc/embedtv/{id}&s={season}&e={episode}",
     },
   },
    {
@@ -45,15 +44,6 @@ export const availableSources: VideoSource[] = [
     urls: {
       movie: "https://multiembed.mov/?video_id={id}&tmdb=1",
       tv: "https://multiembed.mov/?video_id={id}&tmdb=1&s={season}&e={episode}",
-    },
-  },
-    {
-    id: "videasy",
-    name: "VidEasy",
-    isFrench: false,
-    urls: {
-      movie: "https://player.videasy.net/movie/{id}",
-      tv: "https://player.videasy.net/tv/{id}/{season}/{episode}",
     },
   },
    {
