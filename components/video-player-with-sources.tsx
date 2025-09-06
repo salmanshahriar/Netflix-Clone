@@ -93,7 +93,6 @@ export default function VideoPlayerWithSources({
     setErrorMessage("Failed to load this source")
   }
 
-  // Prepare watch later item
   const watchLaterItem = {
     id: movieId || tvId || 0,
     media_type: (movieId ? "movie" : "tv") as "movie" | "tv",
@@ -144,18 +143,18 @@ export default function VideoPlayerWithSources({
                 <AlertCircle className="w-16 h-16 text-red-500 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold text-white mb-2">Video Failed to Load</h3>
                 <p className="text-gray-400 mb-2">{errorMessage || "This source is currently unavailable"}</p>
-                <p className="text-sm text-gray-500 mb-6">Try switching to a different source below</p>
+                <p className="text-sm text-gray-500 mb-6">Try reload again or switching to a different source below</p>
                 <div className="flex gap-3 justify-center">
                   <Button onClick={handleRetry} className="bg-red-600 hover:bg-red-700">
                     <RotateCcw className="w-4 h-4 mr-2" />
-                    Retry Source
+                    Reload Again
                   </Button>
                   <Button
                     variant="outline"
                     onClick={() => handleSourceChange(availableSources[1]?.id || availableSources[0].id)}
                     className="border-gray-600 text-gray-300 hover:bg-gray-700"
                   >
-                    Try Next Source
+                    Next Source
                   </Button>
                 </div>
               </div>
