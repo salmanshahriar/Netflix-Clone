@@ -20,15 +20,6 @@ export const availableSources: VideoSource[] = [
     },
   },
   {
-    id: "primewire",
-    name: "PrimeWire",
-    isFrench: false,
-    urls: {
-      movie: "https://www.primewire.tf/embed/movie?tmdb={id}",
-      tv: "https://www.primewire.tf/embed/tv?tmdb={id}&season={season}&episode={episode}",
-    },
-  },
-    {
     id: "2embed",
     name: "2Embed",
     isFrench: false,
@@ -37,13 +28,13 @@ export const availableSources: VideoSource[] = [
       tv: "https://www.2embed.cc/embedtv/{id}&s={season}&e={episode}",
     },
   },
-   {
-    id: "smashystream",
-    name: "SmashyStream",
+  {
+    id: "primewire",
+    name: "PrimeWire",
     isFrench: false,
     urls: {
-      movie: "https://embed.smashystream.com/playere.php?tmdb={id}",
-      tv: "https://embed.smashystream.com/playere.php?tmdb={id}&season={season}&episode={episode}",
+      movie: "https://www.primewire.tf/embed/movie?tmdb={id}",
+      tv: "https://www.primewire.tf/embed/tv?tmdb={id}&season={season}&episode={episode}",
     },
   },
   {
