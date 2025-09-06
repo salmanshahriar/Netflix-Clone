@@ -137,7 +137,7 @@ export default function VideoPlayerWithSources({
           )}
 
           {/* Error Overlay */}
-          {/* {hasError  && (
+          {hasError  && (
             <div className="absolute inset-0 bg-black/90 flex items-center justify-center z-20">
               <div className="text-center max-w-md px-4">
                 <AlertCircle className="w-16 h-16 text-red-500 mx-auto mb-4" />
@@ -159,7 +159,7 @@ export default function VideoPlayerWithSources({
                 </div>
               </div>
             </div>
-          )} */}
+          )}
 
           {/* Video Iframe */}
           <iframe
@@ -193,7 +193,7 @@ export default function VideoPlayerWithSources({
                 <span className="text-sm text-white bg-red-600 px-3 py-1 rounded-full">{currentSourceName}</span>
               </div>
               <div className="flex items-center gap-2">
-                <Button
+                {/* <Button
                   variant="ghost"
                   size="sm"
                   onClick={() => setShowFrenchSources(!showFrenchSources)}
@@ -201,8 +201,8 @@ export default function VideoPlayerWithSources({
                 >
                   <Globe className="w-4 h-4 mr-2" />
                   French Sources
-                </Button>
-                <Button
+                </Button> */}
+                {/* <Button
                   variant="ghost"
                   size="sm"
                   onClick={() => setShowAllSources(!showAllSources)}
@@ -210,7 +210,7 @@ export default function VideoPlayerWithSources({
                 >
                   {showAllSources ? "Hide Sources" : "Show All Sources"}
                   <ChevronDown className={`w-4 h-4 ml-2 transition-transform ${showAllSources ? "rotate-180" : ""}`} />
-                </Button>
+                </Button> */}
               </div>
             </div>
 
@@ -263,7 +263,7 @@ export default function VideoPlayerWithSources({
             )} */}
 
             {/* Status and Tips */}
-            {/* <div className="bg-gray-800/50 rounded-lg p-4 border border-gray-700">
+            <div className="bg-gray-800/50 rounded-lg p-4 border border-gray-700">
               <div className="flex items-start gap-3">
                 <div className="flex-shrink-0">
                   {hasError ? (
@@ -280,13 +280,13 @@ export default function VideoPlayerWithSources({
                     {hasError ? "Source failed to load" : isLoading ? "Loading video..." : "Video ready"}
                   </p>
                   <div className="text-xs text-gray-400 space-y-1">
+                    <p>• Sorry for the ads. Please don’t be harsh—I’m using a free source, which is why ads are showing.</p>
                     <p>• If a source doesn't work, try switching to another one</p>
                     <p>• Some sources may take longer to load than others</p>
-                    <p>• French sources are available for French content</p>
                   </div>
                 </div>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>
