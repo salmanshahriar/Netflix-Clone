@@ -142,12 +142,12 @@ export default function VideoPlayerWithSources({
               <div className="text-center max-w-md px-4">
                 <AlertCircle className="w-16 h-16 text-red-500 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold text-white mb-2">Video Failed to Load</h3>
-                <p className="text-gray-400 mb-2">{errorMessage || "This source is currently unavailable"}</p>
-                <p className="text-sm text-gray-500 mb-6">Try reload again or switching to a different source below</p>
+                {/* <p className="text-gray-400 mb-2">{errorMessage || "This source is currently unavailable"}</p>
+                <p className="text-sm text-gray-500 mb-6">Try reload again or switching to a different source below</p> */}
                 <div className="flex gap-3 justify-center">
                   <Button onClick={handleRetry} className="bg-red-600 hover:bg-red-700">
                     <RotateCcw className="w-4 h-4 mr-2" />
-                    Reload Again
+                    Reload Video
                   </Button>
                   <Button
                     variant="outline"
