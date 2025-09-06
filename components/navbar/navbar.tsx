@@ -11,6 +11,11 @@ import NavLinks from "./nav-links"
 import { getWatchLaterCount } from "@/lib/watch-later"
 import { getHistoryCount } from "@/lib/watch-history"
 
+export interface NavLinksProps {
+  pathname: string
+  watchLaterCount: number
+  historyCount: number
+}
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [watchLaterCount, setWatchLaterCount] = useState(0)
@@ -60,8 +65,8 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center group">
             <div className="text-2xl lg:text-3xl font-black">
-              <span className="text-red-600 group-hover:text-red-500 transition-colors">NETFLIX</span>
-              <span className="text-white/80 ml-1 text-lg font-normal">CLONE</span>
+              <span className="text-red-600 group-hover:text-red-500 transition-colors">NUTTTFLIX</span>
+              {/* <span className="text-white/80 ml-1 text-lg font-normal">CLONE</span> */}
             </div>
           </Link>
 

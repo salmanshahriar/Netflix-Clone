@@ -2,14 +2,15 @@
 
 import Link from "next/link"
 
-interface NavLinksProps {
+export interface NavLinksProps {
   pathname: string
   watchLaterCount: number
+  historyCount: number
   isMobile?: boolean
   onItemClick?: () => void
 }
 
-export default function NavLinks({ pathname, watchLaterCount, isMobile = false, onItemClick }: NavLinksProps) {
+export default function NavLinks({ pathname, watchLaterCount, historyCount, isMobile = false, onItemClick }: NavLinksProps) {
   const isActive = (href: string) => {
     if (href === "/") return pathname === "/"
     return pathname.startsWith(href)
