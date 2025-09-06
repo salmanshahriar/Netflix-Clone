@@ -81,7 +81,7 @@ export default function TVLoading() {
             </div>
 
             {/* Loading Indicator */}
-            <LoadingScreen title="NETFLIX" subtitle="Loading TV show details..." />
+            <LoadingScreen />
           </div>
         </div>
       </div>

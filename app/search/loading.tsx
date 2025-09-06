@@ -24,7 +24,7 @@ export default function SearchLoading() {
         </div>
 
         {/* Loading Indicator */}
-        <LoadingScreen title="NETFLIX" subtitle="Searching content..." />
+        <LoadingScreen />
       </main>
     </div>
   )
