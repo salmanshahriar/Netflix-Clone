@@ -85,7 +85,7 @@ export default function FilterDropdowns() {
   )
 
   const popularCountries = countries.filter((country) =>
-    ["US", "GB", "CA", "AU", "FR", "DE", "IT", "ES", "JP", "KR", "IN", "BR"].includes(country.iso_3166_1),
+    ["US", "IN", "BD", "PK"].includes(country.iso_3166_1),
   )
 
   const DropdownButton = ({

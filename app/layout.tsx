@@ -7,7 +7,7 @@ import ScrollToTop from "@/components/scroll-to-top"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "NUTTTFLIX - Watch Movies & TV Shows Online",
+  title: "Netflix Clone",
   description: "A Netflix-like streaming platform built with Next.js (github: salmanshahriar)",
 }
 
