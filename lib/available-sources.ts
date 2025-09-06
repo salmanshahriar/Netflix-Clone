@@ -19,6 +19,15 @@ export const availableSources: VideoSource[] = [
       tv: "https://player.autoembed.cc/embed/tv/{id}/{season}/{episode}",
     },
   },
+  {
+    id: "primewire",
+    name: "PrimeWire",
+    isFrench: false,
+    urls: {
+      movie: "https://www.primewire.tf/embed/movie?tmdb={id}",
+      tv: "https://www.primewire.tf/embed/tv?tmdb={id}&season={season}&episode={episode}",
+    },
+  },
     {
     id: "2embed",
     name: "2Embed",
@@ -46,15 +55,7 @@ export const availableSources: VideoSource[] = [
       tv: "https://multiembed.mov/?video_id={id}&tmdb=1&s={season}&e={episode}",
     },
   },
-   {
-    id: "primewire",
-    name: "PrimeWire",
-    isFrench: false,
-    urls: {
-      movie: "https://www.primewire.tf/embed/movie?tmdb={id}",
-      tv: "https://www.primewire.tf/embed/tv?tmdb={id}&season={season}&episode={episode}",
-    },
-  },
+   
 ]
 
 export const getVideoUrl = (
