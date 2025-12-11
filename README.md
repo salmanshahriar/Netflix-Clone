@@ -1,33 +1,29 @@
-# Netflix Clone 🎬
+# Netflix Clone Frontend 🎬
 
 Live Demo: [https://your-netflix.vercel.app/](https://your-netflix.vercel.app//)
 
 A modern Netflix clone built with **Next.js**, **TypeScript**, and **ShadCN**. This project showcases a fully responsive movie/TV streaming frontend using free public video embed sources.
 
----
 
-## 🔧 Tech Stack
+
+## Disclaimer ⚠️ 
+
+This project uses free third-party embeds purely for demo purposes. I do not host or control any of the content shown. This app streams content using free public sources. As a result, video playback might display ads or experience reliability issues.
+
+
+
+## Tech Stack 🔧 
 
 - **Framework**: [Next.js](https://nextjs.org/)
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
 - **UI Components**: [shadcn/ui](https://ui.shadcn.dev/)
 - **Styling**: Tailwind CSS
 
----
 
-## 🎥 Video Playback
 
-This app streams content using free public sources. As a result, video playback might display ads or experience reliability issues.
+## Movie/Shows Video Sources 🧩 
 
-### ⚠️ Disclaimer
-
-> This project uses free third-party embeds purely for demo purposes. I do not host or control any of the content shown.
-
----
-
-## 🧩 Movie/Shows Video Sources
-
-The following sources are used to fetch movie/TV embeds:
+The following public sources are used to fetch Movie/TV embeds (contain ads):
 
 ```ts
 export const availableSources: VideoSource[] = [
