@@ -1,6 +1,6 @@
 # Netflix Clone 🎬
 
-Live Demo: [netflix-clone-uwu.vercel.app](http://netflix-clone-uwu.vercel.app/)
+Live Demo: [https://your-netflix.vercel.app/](https://your-netflix.vercel.app//)
 
 A modern Netflix clone built with **Next.js**, **TypeScript**, and **ShadCN**. This project showcases a fully responsive movie/TV streaming frontend using free public video embed sources.
 
